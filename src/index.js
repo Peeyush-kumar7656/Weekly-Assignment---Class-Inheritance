@@ -1,5 +1,7 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import App from "./components/App";
-
-ReactDOM.render(<App />, document.getElementById("root"));
+import React ,{Component} from 'react';
+export class App extends Component{
+    render(){
+        return <h1>Hi I am learning React</h1>
+    }
+}
+export default App;
