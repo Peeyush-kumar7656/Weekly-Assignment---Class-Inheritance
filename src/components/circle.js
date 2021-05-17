@@ -1,7 +1,10 @@
+import Shape from "./shape";
 class Circle extends Shape {
-    calculateArea() {
-      super.calculateArea();
-      console.log(this.constructor.name + ' Area Calclated Called');
-    }
-  } 
-   module.export={Circle};
+  constructor(props) {
+    super(props);
+}
+  render() {
+    return <div>{this.calculateArea()}</div>;
+  }
+}
+export default Circle;
